@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="es" manifest="html5css3.appcache">
+	<head>
+		<meta charset="UTF-8" />
+		<title>HTML5 y CSS3</title>
+		<meta name="description" content="Ejemplos, ejercicios y documentación de HTML5 y CSS3 utilizados para los cursos impartidos por fjfortis" />
+		<meta name="keywords" content="HTML5, CSS3, ejercicios html5, ejercicios css3, ejemplos html5, ejemplos css3" />
+		<meta name="author" content="fjfortis" />
+		<link rel="stylesheet" href="css/html5css3.css" />
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	</head>
+	<body>
+		
+	</body>
+</html>

@@ -1,0 +1,18 @@
+CACHE MANIFEST
+# 2013-10-04:v02.00
+
+CACHE:
+favicon.ico
+index.html
+css/html5css3.css
+js/clock.js
+js/scroll.js
+http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png
+http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js
+http://html5shim.googlecode.com/svn/trunk/html5.js
+
+FALLBACK:
+/ /offline.html
+
+NETWORK:
+*
