@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Selectores CSS</title>
+		<meta name="description" content="Ejemplo de selectores CSS3" />
+		<meta name="author" content="fjfortis" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		
+		<style>
+			a {
+				color: #4364E0;
+				text-decoration: none;
+				font-weight: bold;
+			}
+			a[href*="w3"] {
+				background: url(img/w3c.png) no-repeat 100% 50%;
+				padding-right: 20px;
+			}
+		</style>
+		
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<ul>
+			<li><a href="http://www.w3c.es/">W3C España</a></li>
+			<li><a href="http://es.wikipedia.org/wiki/World_Wide_Web_Consortium">W3C Wikipedia</a></li>
+			<li><a href="http://www.w3.org/">W3C</a></li>
+		</ul>
+	</body>
+</html>

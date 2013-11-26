@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Valores y unidades</title>
+		<meta name="description" content="Ejemplo de valores y unidades en CSS3" />
+		<meta name="author" content="fjfortis" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		
+		<style>
+			.tam2Em {
+				border: 1px #F00 dotted;
+				padding: 0.5em;
+				margin: 0.5em;
+				font-size: 2em;
+			}
+			.tam1Em {
+				border: 1px #00F dotted;
+				padding: 0.5em;
+				margin: 0.5em;
+				font-size: 1em;
+			}
+			.tam1Rem {
+				border: 1px #0F0 dotted;
+				padding: 0.5em;
+				margin: 0.5em;
+				font-size: 1rem;
+			}
+		</style>
+		
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<p>Texto sin indicar tamaño</p>
+		<div class="tam2Em">
+			<p>Texto 2em</p>
+			<div class="tam2Em">
+				<p>Texto 2em</p>
+				<div class="tam1Rem">
+					<p>Texto 1rem</p>
+				</div>
+				<div class="tam1Em">
+					<p>Texto 1em</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

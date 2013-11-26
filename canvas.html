@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>&lt;canvas&gt;</title>
+		<meta name="description" content="Ejemplo de la etiqueta &lt;canvas&gt;" />
+		<meta name="author" content="fjfortis" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		<style>
+			article {
+				background-color: #eee;
+				margin: 1em;
+				padding: 0.5em;
+			}
+			article h1 {
+				font-size: 1.2em;
+			}
+			
+			canvas {
+				border: 2px solid #FFA500;
+			}
+		</style>
+		<link rel="shortcut icon" href="favicon.ico" />
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="contenedor">
+			<header id="cabecera">
+				<h1>Ejemplo de la etiqueta &lt;canvas&gt; sin JavaScript</h1>
+			</header>
+			<main id="colCentro">
+				
+				<article>
+					<h1>Lienzo con texto de incompatibilidad</h1>
+					<canvas id="dibujo" width="400" height="250">
+						Estás utilizando un <strong>navegador obsoleto</strong>. Por favor <a href="http://browsehappy.com/">actualiza el navegador</a> para mejorar la experiencia de uso.
+					</canvas>
+				</article>
+				
+				<article>
+					<h1>Lienzo con imagen de soporte</h1>
+					<canvas id="autor" width="400" height="250">
+						<img src="img/autor.png" alt="autor" />
+					</canvas>
+				</article>
+				
+			</main>
+		</div>
+	</body>
+</html>

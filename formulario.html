@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Formularios</title>
+		<meta name="description" content="Ejemplo de formulario" />
+		<meta name="author" content="fjfortis" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		
+		<style>
+			form {
+				background-color: #eee;
+				margin: 1em;
+				padding: 1em;
+			}
+			
+			fieldset {
+				margin-bottom: 2em;
+				padding: 1em;
+				border: 1px solid #FFA500;
+			}
+			legend {
+				color: #FFA500;
+				font-weight: bold;
+				padding: 0 0.5em;
+				text-shadow:
+					0.1em 0.1em rgba(255,255,255,0.9),
+					-0.1em 0.1em rgba(255,255,255,0.9),
+					0.1em -0.1em rgba(255,255,255,0.9),
+					-0.1em -0.1em rgba(255,255,255,0.9);
+			}
+			
+			.campo {
+				margin-bottom: 1em;
+			}
+			.campo label {
+				float: left;
+				width: 10em;
+			}
+			.campo input {
+				width: 50%;
+			}
+			
+			.botonera {
+				text-align: right;
+			}
+		</style>
+		
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="contenedor">
+			<header id="cabecera">
+				<h1>Ejemplo de formulario HTML5</h1>
+			</header>
+			<main id="colCentro">
+				
+				<form action="#" method="get">
+					
+					<fieldset>
+						<legend>Datos del propietario</legend>
+						
+						<div class="campo">
+							<label for="frmNombre">Nombre</label>
+							<input id="frmNombre" name="frmNombre" type="text" required="required" autofocus="autofocus" />
+						</div>
+						
+						<div class="campo">
+							<label for="frmDireccion">Dirección</label>
+							<input id="frmDireccion" name="frmDireccion" type="text" />
+						</div>
+						
+						<div class="campo">
+							<label for="frmCP">Código postal</label>
+							<input id="frmCP" name="frmCP" type="number" />
+						</div>
+						
+						<div class="campo">
+							<label for="frmProvincia">Provincia</label>
+							<select id="frmProvincia" name="frmProvincia">
+								<option value="">Seleccione una provincia</option>
+								<option>Madrid</option>
+								<option>Barcelona</option>
+								<option>Sevilla</option>
+							</select>
+						</div>
+						
+						<div class="campo">
+							<label for="frmTlf">Teléfono</label>
+							<input id="frmTlf" name="frmTlf" type="tel" maxlength="9" pattern="[0-9]{9}" placeholder="9 dígitos" />
+						</div>
+						
+						<div class="campo">
+							<label for="frmMail">Correo electrónico</label>
+							<input id="frmMail" name="frmMail" type="email" />
+						</div>
+						
+					</fieldset>
+					
+					<fieldset>
+						<legend>Datos de la mascota</legend>
+						
+						<div class="campo">
+							<label for="frmNombreMascota">Nombre</label>
+							<input id="frmNombreMascota" name="frmNombreMascota" type="text" required="required" />
+						</div>
+						
+						<div class="campo">
+							<label for="frmEspecie">Especie</label>
+							<input id="frmEspecie" name="frmEspecie" type="text" required="required" list="listaEspecies" />
+							
+							<datalist id="listaEspecies">
+								<option value="Perro"></option>
+								<option value="Gato"></option>
+							</datalist>
+							
+						</div>
+						
+						<div class="campo">
+							<label for="frmFechaNacimiento">Fecha de nacimiento</label>
+							<input id="frmFechaNacimiento" name="frmFechaNacimiento" type="date" />
+						</div>
+						
+						<div class="campo">
+							<label for="frmColor">Color</label>
+							<input id="frmColor" name="frmColor" type="color" />
+						</div>
+						
+						<div class="campo">
+							<label for="frmDocil">Docilidad</label>
+							<input id="frmDocil" name="frmDocil" type="range" min="0" max="10" value="7" />
+						</div>
+						
+					</fieldset>
+					
+					<div class="botonera">
+						<input type="reset" value="Borrar" />
+						<input type="submit" value="Enviar" />
+					</div>
+					
+				</form>
+				
+			</main>
+		</div>
+	</body>
+</html>

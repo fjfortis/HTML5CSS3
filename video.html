@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>&lt;video&gt;</title>
+		<meta name="description" content="Ejemplo de la etiqueta &lt;video&gt;" />
+		<meta name="author" content="fjfortis" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		<style>
+			article {
+				background-color: #eee;
+				margin: 1em;
+				padding: 0.5em;
+			}
+			article h1 {
+				font-size: 1.2em;
+			}
+			
+			video {
+				border: 2px solid #FFA500;
+			}
+			
+			.nota {
+				font-size: 0.8em;
+				color: #aaa;
+			}
+		</style>
+		<link rel="shortcut icon" href="favicon.ico" />
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="contenedor">
+			<header id="cabecera">
+				<h1>Ejemplo de la etiqueta &lt;video&gt;</h1>
+			</header>
+			<main id="colCentro">
+				
+				<article>
+					<h1>Vídeo indicando únicamente la fuente</h1>
+					<video src="media/Creative_Commons_-_Get_Creative.webm"></video>
+				</article>
+				
+				<article>
+					<h1>Vídeo indicando fuente, tamaño y texto de incompatibilidad</h1>
+					<video src="media/Creative_Commons_-_Get_Creative.webm" width="400" height="300">
+						<p>Estás utilizando un <strong>navegador obsoleto</strong>. Por favor <a href="http://browsehappy.com/">actualiza el navegador</a> para mejorar la experiencia de uso.</p>
+					</video>
+				</article>
+				
+				<article>
+					<h1>Vídeo indicando fuente, tamaño y controles</h1>
+					<video src="media/Creative_Commons_-_Get_Creative.webm" width="400" height="300" controls="controls"></video>
+				</article>
+				
+				<article>
+					<h1>Vídeo indicando fuente, tamaño, controles y autoplay</h1>
+					<video src="media/Creative_Commons_-_Get_Creative.webm" width="400" height="300" controls="controls" autoplay="autoplay"></video>
+				</article>
+				
+				<article>
+					<h1>Vídeo indicando fuente, tamaño, controles y precarga</h1>
+					<video src="media/Creative_Commons_-_Get_Creative.webm" width="400" height="300" controls="controls" preload="auto"></video>
+				</article>
+				
+				<article>
+					<h1>Vídeo indicando dos fuentes, tamaño y controles</h1>
+					<video width="400" height="300" controls="controls">
+						<source src="media/Creative_Commons_-_Get_Creative.webm" type='video/webm; codecs="vp8, vorbis"' />
+						<source src="media/Creative_Commons_-_Get_Creative.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+					</video>
+				</article>
+				
+				<article>
+					<h1>Vídeo indicando fuentes, tamaño, controles y un póster</h1>
+					<video width="400" height="300" controls="controls" poster="img/creativeCommons.png">
+						<source src="media/Creative_Commons_-_Get_Creative.webm" type='video/webm; codecs="vp8, vorbis"' />
+						<source src="media/Creative_Commons_-_Get_Creative.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+					</video>
+				</article>
+				
+				<article>
+					<h1>Vídeo indicando fuentes, tamaño, controles, un póster y audio silenciado</h1>
+					<video width="400" height="300" controls="controls" poster="img/creativeCommons.png" muted="muted">
+						<source src="media/Creative_Commons_-_Get_Creative.webm" type='video/webm; codecs="vp8, vorbis"' />
+						<source src="media/Creative_Commons_-_Get_Creative.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+					</video>
+				</article>
+				
+				<article>
+					<h1>Forma recomendada de utilizar la etiqueta &lt;video&gt;</h1>
+					<video width="400" height="300" controls="controls" poster="img/creativeCommons.png">
+						<source src="media/Creative_Commons_-_Get_Creative.webm" type='video/webm; codecs="vp8, vorbis"' />
+						<source src="media/Creative_Commons_-_Get_Creative.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+						<p><a href="media/Creative_Commons_-_Get_Creative.mp4"><img src="img/creativeCommons.png" alt="Creative Commons" /></a></p>
+						<p class="nota">Estás utilizando un <strong>navegador obsoleto</strong>. Por favor <a href="http://browsehappy.com/">actualiza el navegador</a> para mejorar la experiencia de uso.</p>
+					</video>
+				</article>
+				
+			</main>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Desbordamiento de texto</title>
+		<meta name="description" content="Ejemplo del desbordamiento de texto en CSS3" />
+		<meta name="author" content="fjfortis" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		
+		<style>
+			div {
+				width: 200px;
+				height: 200px;
+				padding: 1em;
+				margin: 1em;
+				border: 1px solid #FFA500;
+			}
+			
+			#caja1 {
+				overflow: visible;
+			}
+			#caja2 {
+				overflow: hidden;
+				text-overflow: clip;
+			}
+			#caja3 {
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		</style>
+		
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="caja1">
+			<strong>Caja 1</strong><br />
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, palaaaabraExtremaaaadamenteLaaaaaargaaaaa sed diam nonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diamvoluptua. At vero eos et accusam et justo duo dolores et
+		</div>
+		<div id="caja2">
+			<strong>Caja 2</strong><br />
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, palaaaabraExtremaaaadamenteLaaaaaargaaaaa sed diam nonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diamvoluptua. At vero eos et accusam et justo duo dolores et
+		</div>
+		<div id="caja3">
+			<strong>Caja 3</strong><br />
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, palaaaabraExtremaaaadamenteLaaaaaargaaaaa sed diam nonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diamvoluptua. At vero eos et accusam et justo duo dolores et
+		</div>
+	</body>
+</html>

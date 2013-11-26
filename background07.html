@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Imágenes de fondo</title>
+		<meta name="description" content="Ejemplo de imágenes de fondo en CSS3" />
+		<meta name="author" content="fjfortis" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		
+		<style>
+			div {
+				font-weight: bold;
+				font-size: 2em;
+				float: left;
+				width: 300px;
+				height: 300px;
+				padding: 1em;
+				margin: 1em;
+			}
+			
+			#caja1 {
+				background:
+					url("img/bola.png") left top repeat-x,
+					url("img/bola2.png") right top repeat-y,
+					url("img/bola3.png") left bottom repeat-x,
+					url("img/bola4.png") left top repeat-y,
+					url("img/bola.png") 15% 15% no-repeat,
+					url("img/bola2.png") 85% 15% no-repeat,
+					url("img/bola3.png") 85% 85% no-repeat,
+					url("img/bola4.png") 15% 85% no-repeat #FFA500;
+				background-size:
+					auto,
+					auto,
+					auto,
+					auto,
+					10%,
+					20%,
+					30%,
+					40%;
+			}
+		</style>
+		
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="caja1">&nbsp;</div>
+	</body>
+</html>

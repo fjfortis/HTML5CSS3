@@ -1,0 +1,118 @@
+@font-face {
+	font-family: 'Quantico';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Quantico'), local('Quantico-Regular'), url('http://themes.googleusercontent.com/static/fonts/quantico/v2/RC4TVDxn85RHKNRvpYMc9PesZW2xOQ-xsNqO47m55DA.woff') format('woff');
+}
+
+body {
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-size:1em;
+	color: #1A1A1A;
+}
+
+a {
+	text-decoration: none;
+	color: #A52A2A;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	margin: 0;
+	font-size:1.5em;
+}
+h1 span {
+	font-size:0.8em;
+}
+
+
+#contenedor {
+	min-width:980px;
+	width: 90%;
+	margin: 10em auto 100%;
+}
+
+
+#cabecera {
+	min-width: 980px;
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	font-size:1.5em;
+	padding:0.5em;
+	background-color: #BFBFBF;
+	border-bottom: 5px solid #1A1A1A;
+}
+
+#menuPrincipal {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+}
+#menuPrincipal ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+#menuPrincipal li {
+	display: inline;
+}
+#menuPrincipal li a {
+	float: left;
+	position: relative;
+	height: 100%;
+	padding: 0 1em;
+	border-left: 1px solid #DFDFDF;
+	text-decoration: none;
+}
+#menuPrincipal li a:hover {
+	background-color: #B0B0B0;
+}
+#menuPrincipal li a span {
+	display: block;
+	position: relative;
+	top: 50%;
+	margin-top: -0.6em;
+}
+
+#pie {
+	position:fixed;
+	bottom:10px;
+	right:0;
+}
+
+article {
+	padding: 1em;
+	margin: 1em;
+	background-color: #EFEFEF;
+}
+
+.fbase, .fbase a {
+	color:#8B6914;
+}
+.fbase img {
+	width:1em;
+}
+
+/* Reloj */
+#clock {
+	display:block;
+	position:absolute;
+	top:100%;
+	right:0;
+	padding:0.5em;
+	font-family: 'Quantico', Helvetica, sans-serif;
+	font-size: 0.7em;
+}
+
+/* Offline */
+#offline {
+	text-align:center;
+	padding-top:14em;
+	font-family: 'Quantico', Helvetica, sans-serif;
+}

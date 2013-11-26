@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Selectores CSS</title>
+		<meta name="description" content="Ejemplo de selectores CSS3" />
+		<meta name="author" content="fjfortis" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		
+		<style>
+			div {
+				margin: 1em;
+			}
+			li {
+				list-style: none;
+			}
+			input:enabled {
+				background-color: #DBFFE6;
+			}
+			input:disabled {
+				background-color: #FFE0DB;
+			}
+			input:checked + label {
+				font-weight: bold;
+			}
+		</style>
+		
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<form action="#">
+			<div><input id="nombre" name="nombre" type="text" placeholder="Nombre" /></div>
+			<div><input id="apellidos" name="apellidos" type="text" placeholder="Apellidos" disabled="disabled" /></div>
+			<div>
+				<label>Forma de pago:</label>
+				<ul>
+					<li>
+						<input id="pagoMetalico" name="pago" type="radio" value="metalico" />
+						<label for="pagoMetalico">En metálico</label>
+					</li>
+					<li>
+						<input id="pagoVisa" name="pago" type="radio" value="visa" />
+						<label for="pagoVisa">Visa</label>
+					</li>
+					<li>
+						<input id="pagoMastercard" name="pago" type="radio" value="mastercard" />
+						<label for="pagoMastercard">Mastercard</label>
+					</li>
+				</ul>
+			</div>
+		</form>
+	</body>
+</html>

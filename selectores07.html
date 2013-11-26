@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Selectores CSS</title>
+		<meta name="description" content="Ejemplo de selectores CSS3" />
+		<meta name="author" content="fjfortis" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		
+		<style>
+			div {
+				margin: 1em;
+			}
+			label {
+				font-weight: bold;
+			}
+			input {
+				border: 1px solid #FFA500;
+				padding: 0.5em;
+			}
+			input:valid {
+				background-color: #90EE90;
+			}
+			input:invalid {
+				background-color: #FFC0CB;
+			}
+		</style>
+		
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<form action="#">
+			<div><label for="correoVal">correo válido:</label> <input id="correoVal" name="correoVal" type="email" value="usuario@servidor.com" /></div>
+			<div><label for="correoInv">correo inválido:</label> <input id="correoInv" name="correoInv" type="email" value="usuario" /></div>
+		</form>
+	</body>
+</html>

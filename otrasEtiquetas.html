@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Otras etiquetas incorporadas en HTML5</title>
+		<meta name="description" content="Ejemplo de otras etiquetas incorporadas en HTML5" />
+		<meta name="author" content="fjfortis" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		<style>
+			article {
+				background-color: #eee;
+				margin: 1em;
+				overflow: hidden;
+				padding: 0.5em;
+			}
+			article h1 {
+				font-size: 1.2em;
+			}
+			article h2 {
+				font-size: 1em;
+			}
+			
+			figure {
+				float: left;
+				margin-right: 1em;
+			}
+			figure * {
+				color: #FFA500;
+			}
+			figcaption {
+				font-size: 0.8em;
+				text-align: center;
+				font-weight: bold;
+			}
+		</style>
+		<link rel="shortcut icon" href="favicon.ico" />
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="contenedor">
+			<header id="cabecera">
+				<h1>Otras etiquetas incorporadas en HTML5</h1>
+			</header>
+			<main id="colCentro">
+				
+				<article>
+					<h1>&lt;details&gt; y &lt;summary&gt;</h1>
+					<details open="open">
+						<summary>Atributos</summary>
+						<ul>
+							<li>open</li>
+						</ul>
+					</details>
+					<p>Hemos utilizado &lt;details&gt; y &lt;summary&gt; para indicar los atributos de las etiquetas mostradas en este ejemplo.</p>
+				</article>
+				
+				<article>
+					<h1>&lt;time&gt;</h1>
+					<details>
+						<summary>Atributos</summary>
+						<ul>
+							<li>datetime</li>
+						</ul>
+					</details>
+					<p><a href="http://es.wikipedia.org/">Wikipedia</a> fue lanzada el <time datetime="2001-01-15">15 de enero de 2001</time>.</p>
+				</article>
+				
+				<article>
+					<h1>&lt;meter&gt;</h1>
+					<details>
+						<summary>Atributos</summary>
+						<ul>
+							<li>value</li>
+							<li>min</li>
+							<li>max</li>
+							<li>low</li>
+							<li>high</li>
+							<li>optimum</li>
+						</ul>
+					</details>
+					<h2>Artículos en stock</h2>
+					<ul>
+						<li>Monitores <meter value="7" min="0" max="10" low="2" high="8" optimum="5">7</meter></li>
+						<li>Impresoras <meter value="1" min="0" max="10" low="2" high="8" optimum="5">1</meter></li>
+						<li>Teclados <meter value="5" min="0" max="10" low="2" high="8" optimum="5">5</meter></li>
+						<li>Ratones <meter value="9" min="0" max="10" low="2" high="8" optimum="5">9</meter></li>
+					</ul>
+				</article>
+				
+				<article>
+					<h1>&lt;progress&gt;</h1>
+					<details>
+						<summary>Atributos</summary>
+						<ul>
+							<li>value</li>
+							<li>max</li>
+						</ul>
+					</details>
+					<h2>Envío de ficheros</h2>
+					<ul>
+						<li>a.zip <progress value="67" max="100">67%</progress></li>
+						<li>b.zip <progress value="20" max="100">20%</progress></li>
+						<li>c.zip <progress max="100">?</progress></li>
+					</ul>
+				</article>
+				
+				<article>
+					<h1>&lt;figure&gt; y &lt;figcaption&gt;</h1>
+					<figure>
+						<img src="img/setas_MAC.jpg" alt="Metropol Parasol en Sevilla" />
+						<figcaption>Fotografía de <a href="http://www.flickr.com/photos/94933049@N02/8738195878/">Manuel Ángel Carmona</a></figcaption>
+					</figure>
+					<p>Con la etiqueta figure añadiremos figuras al contenido de la página.</p>
+					<p>Con la etiqueta figcaption indicaremos la descripción de la figura.</p>
+					<p>No todas las imágenes son figuras. Una figura también tiene carga semántica y forma parte del contenido.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, molestias, officia, commodi quos eaque facilis debitis neque ut delectus id velit asperiores repellat consequatur numquam odio aperiam in doloremque porro placeat iusto modi voluptates nisi iure quia inventore accusantium ipsam sit consectetur quo. Voluptatum, eos, repudiandae repellat voluptate ratione expedita inventore nihil voluptatem possimus quae dolorem beatae labore doloremque. Hic, delectus, sapiente dignissimos distinctio nostrum ab ratione incidunt voluptatibus repellendus voluptatum cum dolore dolor nam commodi beatae ipsam sunt quidem explicabo iusto fugiat libero accusantium nemo itaque perspiciatis iure fugit quo qui placeat tempore aliquam? Quisquam, quasi provident doloribus quis commodi ullam dolore magnam esse. Possimus, harum, distinctio, veniam, animi incidunt sit asperiores dolor mollitia dicta facilis quas dolore rem earum sunt voluptatibus. Magnam, officia, similique veritatis culpa quaerat tenetur provident autem eligendi temporibus rerum nemo error voluptas reprehenderit alias esse minima eveniet enim nesciunt ex aspernatur odio beatae perspiciatis perferendis rem minus nobis cupiditate! Cum, corporis, soluta, veritatis, reiciendis perferendis enim molestias nemo fugiat commodi eligendi laborum aspernatur numquam iure distinctio architecto cumque voluptate obcaecati dicta reprehenderit officia perspiciatis ab id quis velit animi asperiores accusantium! Culpa, facilis maxime molestiae illo tenetur labore pariatur corporis rem impedit aut laborum.</p>
+				</article>
+				
+				<article>
+					<h1>&lt;mark&gt;</h1>
+					<p>La etiqueta &lt;mark&gt; sirve para <mark>marcar el texto</mark> pero sin aumentar su importancia.</p>
+				</article>
+				
+			</main>
+		</div>
+	</body>
+</html>

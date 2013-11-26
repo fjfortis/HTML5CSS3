@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Formato de tablas</title>
+		<meta name="description" content="Ejemplo de formato de tablas" />
+		<meta name="author" content="fjfortis" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		
+		<style>
+			#contenedor {
+				margin: 1em 10%;
+			}
+			
+			table {
+				border-collapse: collapse;
+				border: 1px solid #004A4A;
+				width: 50em;
+			}
+			th,td {
+				padding: 0.2em 0.5em;
+			}
+			td {
+				text-align: right;
+			}
+			td:after {
+				content: " €";
+			}
+			
+			tr:nth-of-type(odd){
+				background-color: #92C4C4;
+			}
+			tr:nth-of-type(even){
+				background-color: #92D0D0;
+			}
+			
+			tr:first-of-type th {
+				background-color: #004A4A;
+				color: #FFF;
+				font-size: 1.2em;
+			}
+			tr:first-of-type th:first-of-type {
+				font-size: 1.8em;
+			}
+			tr:first-of-type th:last-of-type {
+				font-size: 1.5em;
+			}
+			
+			tr td:last-child {
+				font-weight: bold;
+				font-size: 1.2em;
+			}
+			tr:nth-of-type(2n+1) td:last-child {
+				background-color: #5FA8A8;
+			}
+			tr:nth-of-type(2n) td:last-child {
+				background-color: #5EC2C2;
+			}
+			
+			tr:last-of-type {
+				background-color: #FFFFC4;
+				font-size: 1.2em;
+				font-weight: bold;
+			}
+			tr:last-of-type td:last-child {
+				background-color: #FFFF00;
+				font-size: 1.5em;
+			}
+		</style>
+		
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="contenedor">
+			<header id="cabecera">
+				<h1>Ventas trimestrales</h1>
+			</header>
+
+			<main id="colCentro">
+				<table>
+					<tr>
+						<th>Ventas</th>
+						<th>Trim1</th>
+						<th>Trim2</th>
+						<th>Trim3</th>
+						<th>Trim4</th>
+						<th>Total vendedor</th>
+					</tr>
+					<tr>
+						<th>Blanco</th>
+						<td>25.488</td>
+						<td>32.452</td>
+						<td>16.684</td>
+						<td>47.888</td>
+						<td>122.512</td>
+					</tr>
+					<tr>
+						<th>Contreras</th>
+						<td>46.589</td>
+						<td>135.489</td>
+						<td>45.568</td>
+						<td>78.995</td>
+						<td>306.641</td>
+					</tr>
+					<tr>
+						<th>Fernández</th>
+						<td>78.965</td>
+						<td>65.432</td>
+						<td>78.945</td>
+						<td>124.578</td>
+						<td>347.920</td>
+					</tr>
+					<tr>
+						<th>García</th>
+						<td>7.894</td>
+						<td>15.684</td>
+						<td>45.214</td>
+						<td>31.222</td>
+						<td>100.014</td>
+					</tr>
+					<tr>
+						<th>Gómez</th>
+						<td>98.765</td>
+						<td>65.445</td>
+						<td>32.123</td>
+						<td>45.665</td>
+						<td>241.998</td>
+					</tr>
+					<tr>
+						<th>Guerrero</th>
+						<td>85.241</td>
+						<td>74.152</td>
+						<td>96.352</td>
+						<td>88.652</td>
+						<td>344.397</td>
+					</tr>
+					<tr>
+						<th>López</th>
+						<td>14.758</td>
+						<td>25.869</td>
+						<td>25.478</td>
+						<td>23.658</td>
+						<td>89.763</td>
+					</tr>
+					<tr>
+						<th>Martínez</th>
+						<td>65.432</td>
+						<td>32.156</td>
+						<td>65.847</td>
+						<td>32.569</td>
+						<td>196.004</td>
+					</tr>
+					<tr>
+						<th>Reina</th>
+						<td>10.254</td>
+						<td>15.965</td>
+						<td>9.548</td>
+						<td>10.235</td>
+						<td>41.002</td>
+					</tr>
+					<tr>
+						<th>Ruíz</th>
+						<td>98.562</td>
+						<td>85.745</td>
+						<td>87.456</td>
+						<td>89.654</td>
+						<td>361.417</td>
+					</tr>
+					<tr>
+						<th>Sánchez</th>
+						<td>45.698</td>
+						<td>47.854</td>
+						<td>54.785</td>
+						<td>54.264</td>
+						<td>202.601</td>
+					</tr>
+					<tr>
+						<th>Sierra</th>
+						<td>12.365</td>
+						<td>25.452</td>
+						<td>21.452</td>
+						<td>13.254</td>
+						<td>72.523</td>
+					</tr>
+					<tr>
+						<th>Total trimestre</th>
+						<td>590.011</td>
+						<td>621.695</td>
+						<td>579.452</td>
+						<td>640.634</td>
+						<td>2.431.792</td>
+					</tr>
+				</table>
+			</main>
+		</div>
+	</body>
+</html>

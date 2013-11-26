@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>&lt;audio&gt;</title>
+		<meta name="description" content="Ejemplo de la etiqueta &lt;audio&gt;" />
+		<meta name="author" content="fjfortis" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		<style>
+			article {
+				background-color: #eee;
+				margin: 1em;
+				padding: 0.5em;
+			}
+			article h1 {
+				font-size: 1.2em;
+			}
+		</style>
+		<link rel="shortcut icon" href="favicon.ico" />
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="contenedor">
+			<header id="cabecera">
+				<h1>Ejemplo de la etiqueta &lt;audio&gt;</h1>
+			</header>
+			<main id="colCentro">
+				
+				<article>
+					<h1>Audio indicando únicamente la fuente y los controles</h1>
+					<audio src="media/rebirth.ogg" controls="controls"></audio>
+				</article>
+				
+				<article>
+					<h1>Audio indicando dos fuentes, controles, precarga, reproducción automática, reproducción en bucle y texto de incompatibilidad</h1>
+					<audio controls="controls" preload="auto" autoplay="autoplay" loop="loop">
+						<source src="media/rebirth.ogg" type='audio/ogg; codecs=vorbis' />
+						<source src="media/rebirth.mp3" type='audio/mpeg; codecs=mp3' />
+						<p>Estás utilizando un <strong>navegador obsoleto</strong>. Por favor <a href="http://browsehappy.com/">actualiza el navegador</a> para mejorar la experiencia de uso.</p>
+					</audio>
+				</article>
+				
+				<aside>Música por <a href="http://www.jamendo.com/en/album/90315">Stefano mocini</a></aside>
+				
+			</main>
+		</div>
+	</body>
+</html>

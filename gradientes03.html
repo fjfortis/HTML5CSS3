@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Gradientes</title>
+		<meta name="description" content="Ejemplo de gradientes en CSS3" />
+		<meta name="author" content="fjfortis" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		
+		<style>
+			div  {
+				font-weight:bold;
+				float:left;
+				width:200px;
+				height:100px;
+				overflow:auto;
+				padding:1em;
+				margin:1em;
+				border: 1px solid #FFA500;
+			}
+
+			#caja1 {
+				background: repeating-linear-gradient(left, #ADD8E6, #A020F0 25px);
+				background: -webkit-repeating-linear-gradient(left, #ADD8E6, #A020F0 25px);
+				background: -moz-repeating-linear-gradient(left, #ADD8E6, #A020F0 25px);
+				background: -o-repeating-linear-gradient(left, #ADD8E6, #A020F0 25px);
+			}
+
+			#caja2 {
+				background: repeating-linear-gradient(left, #ADD8E6 15px, #A020F0 60px);
+				background: -webkit-repeating-linear-gradient(left, #ADD8E6 15px, #A020F0 60px);
+				background: -moz-repeating-linear-gradient(left, #ADD8E6 15px, #A020F0 60px);
+				background: -o-repeating-linear-gradient(left, #ADD8E6 15px, #A020F0 60px);
+			}
+
+			#caja3 {
+				background: repeating-linear-gradient(left, #ADD8E6 0, #A020F0 15px, #FFC0CB 40px, #A52A2A 55px);
+				background: -webkit-repeating-linear-gradient(left, #ADD8E6 0, #A020F0 15px, #FFC0CB 40px, #A52A2A 55px);
+				background: -moz-repeating-linear-gradient(left, #ADD8E6 0, #A020F0 15px, #FFC0CB 40px, #A52A2A 55px);
+				background: -o-repeating-linear-gradient(left, #ADD8E6 0, #A020F0 15px, #FFC0CB 40px, #A52A2A 55px);
+			}
+
+			#caja4 {
+				background: repeating-radial-gradient(circle, #ADD8E6, #A020F0 25px);
+				background: -webkit-repeating-radial-gradient(circle, #ADD8E6, #A020F0 25px);
+				background: -moz-repeating-radial-gradient(circle, #ADD8E6, #A020F0 25px);
+				background: -o-repeating-radial-gradient(circle, #ADD8E6, #A020F0 25px);
+			}
+
+			#caja5 {
+				background: repeating-radial-gradient(circle, #ADD8E6 15px, #A020F0 60px);
+				background: -webkit-repeating-radial-gradient(circle, #ADD8E6 15px, #A020F0 60px);
+				background: -moz-repeating-radial-gradient(circle, #ADD8E6 15px, #A020F0 60px);
+				background: -o-repeating-radial-gradient(circle, #ADD8E6 15px, #A020F0 60px);
+			}
+
+			#caja6 {
+				background: repeating-radial-gradient(circle, #ADD8E6 0, #A020F0 15px, #FFC0CB 40px, #A52A2A 55px);
+				background: -webkit-repeating-radial-gradient(circle, #ADD8E6 0, #A020F0 15px, #FFC0CB 40px, #A52A2A 55px);
+				background: -moz-repeating-radial-gradient(circle, #ADD8E6 0, #A020F0 15px, #FFC0CB 40px, #A52A2A 55px);
+				background: -o-repeating-radial-gradient(circle, #ADD8E6 0, #A020F0 15px, #FFC0CB 40px, #A52A2A 55px);
+			}
+		</style>
+		
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="caja1">left, #ADD8E6, #A020F0 25px</div>
+		<div id="caja2">left, #ADD8E6 15px, #A020F0 60px</div>
+		<div id="caja3">left, #ADD8E6, #A020F0, #FFC0CB, #A52A2A</div>
+		<div id="caja4">circle, #ADD8E6, #A020F0 25px</div>
+		<div id="caja5">circle, #ADD8E6 15px, #A020F0 60px</div>
+		<div id="caja6">circle, #ADD8E6, #A020F0, #FFC0CB, #A52A2A</div>
+	</body>
+</html>

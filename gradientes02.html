@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Gradientes</title>
+		<meta name="description" content="Ejemplo de gradientes en CSS3" />
+		<meta name="author" content="fjfortis" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		
+		<style>
+			div  {
+				font-weight:bold;
+				float:left;
+				width:200px;
+				height:100px;
+				overflow:auto;
+				padding:1em;
+				margin:1em;
+				border: 1px solid #FFA500;
+			}
+
+			#caja1 {
+				background: radial-gradient(#ADD8E6, #A020F0);
+				background: -webkit-radial-gradient(#ADD8E6, #A020F0);
+				background: -moz-radial-gradient(#ADD8E6, #A020F0);
+				background: -o-radial-gradient(#ADD8E6, #A020F0);
+			}
+
+			#caja2 {
+				background: radial-gradient(circle, #ADD8E6, #A020F0);
+				background: -webkit-radial-gradient(circle, #ADD8E6, #A020F0);
+				background: -moz-radial-gradient(circle, #ADD8E6, #A020F0);
+				background: -o-radial-gradient(circle, #ADD8E6, #A020F0);
+			}
+
+			#caja3 {
+				background: radial-gradient(20% 80%, circle, #ADD8E6, #A020F0);
+				background: -webkit-radial-gradient(20% 80%, circle, #ADD8E6, #A020F0);
+				background: -moz-radial-gradient(20% 80%, circle, #ADD8E6, #A020F0);
+				background: -o-radial-gradient(20% 80%, circle, #ADD8E6, #A020F0);
+			}
+
+			#caja4 {
+				background: radial-gradient(20% 80%, circle, #ADD8E6, #A020F0, #FFC0CB, #A52A2A);
+				background: -webkit-radial-gradient(20% 80%, circle, #ADD8E6, #A020F0, #FFC0CB, #A52A2A);
+				background: -moz-radial-gradient(20% 80%, circle, #ADD8E6, #A020F0, #FFC0CB, #A52A2A);
+				background: -o-radial-gradient(20% 80%, circle, #ADD8E6, #A020F0, #FFC0CB, #A52A2A);
+			}
+
+			#caja5 {
+				background: radial-gradient(right, #ADD8E6 30%, #A020F0 70%);
+				background: -webkit-radial-gradient(right, #ADD8E6 30%, #A020F0 70%);
+				background: -moz-radial-gradient(right, #ADD8E6 30%, #A020F0 70%);
+				background: -o-radial-gradient(right, #ADD8E6 30%, #A020F0 70%);
+			}
+
+			#caja6 {
+				background: radial-gradient(circle closest-side, #ADD8E6, #A020F0);
+				background: -webkit-radial-gradient(circle closest-side, #ADD8E6, #A020F0);
+				background: -moz-radial-gradient(circle closest-side, #ADD8E6, #A020F0);
+				background: -o-radial-gradient(circle closest-side, #ADD8E6, #A020F0);
+			}
+
+			#caja7 {
+				background: radial-gradient(circle farthest-side, #ADD8E6, #A020F0);
+				background: -webkit-radial-gradient(circle farthest-side, #ADD8E6, #A020F0);
+				background: -moz-radial-gradient(circle farthest-side, #ADD8E6, #A020F0);
+				background: -o-radial-gradient(circle farthest-side, #ADD8E6, #A020F0);
+			}
+
+			#caja8 {
+				background:
+					radial-gradient(left, rgba(173,216,230,0.1) 30%, rgba(160,32,240,0.9) 70%),
+					radial-gradient(top, rgba(255,165,0,0.1) 30%, rgba(165,42,42,0.9) 70%);
+				background:
+					-webkit-radial-gradient(left, rgba(173,216,230,0.1) 30%, rgba(160,32,240,0.9) 70%),
+					-webkit-radial-gradient(top, rgba(255,165,0,0.1) 30%, rgba(165,42,42,0.9) 70%);
+				background:
+					-moz-radial-gradient(left, rgba(173,216,230,0.1) 30%, rgba(160,32,240,0.9) 70%),
+					-moz-radial-gradient(top, rgba(255,165,0,0.1) 30%, rgba(165,42,42,0.9) 70%);
+				background:
+					-o-radial-gradient(left, rgba(173,216,230,0.1) 30%, rgba(160,32,240,0.9) 70%),
+					-o-radial-gradient(top, rgba(255,165,0,0.1) 30%, rgba(165,42,42,0.9) 70%);
+			}
+
+			#caja9 {
+				background:
+					radial-gradient(20% 80%, circle contain, rgba(173,216,230,1) 30%, rgba(160,32,240,0.1) 70%),
+					radial-gradient(90% 50%, circle closest-corner,  rgba(255,165,0,1) 30%, rgba(165,42,42,0.1) 70%),
+					linear-gradient(rgba(144,238,144,1), rgba(21,105,21,1));
+				background:
+					-webkit-radial-gradient(20% 80%, circle contain, rgba(173,216,230,1) 30%, rgba(160,32,240,0.1) 70%),
+					-webkit-radial-gradient(90% 50%, circle closest-corner,  rgba(255,165,0,1) 30%, rgba(165,42,42,0.1) 70%),
+					-webkit-linear-gradient(rgba(144,238,144,1), rgba(21,105,21,1));
+				background:
+					-moz-radial-gradient(20% 80%, circle contain, rgba(173,216,230,1) 30%, rgba(160,32,240,0.1) 70%),
+					-moz-radial-gradient(90% 50%, circle closest-corner,  rgba(255,165,0,1) 30%, rgba(165,42,42,0.1) 70%),
+					-moz-linear-gradient(rgba(144,238,144,1), rgba(21,105,21,1));
+				background:
+					-o-radial-gradient(20% 80%, circle contain, rgba(173,216,230,1) 30%, rgba(160,32,240,0.1) 70%),
+					-o-radial-gradient(90% 50%, circle closest-corner,  rgba(255,165,0,1) 30%, rgba(165,42,42,0.1) 70%),
+					-o-linear-gradient(rgba(144,238,144,1), rgba(21,105,21,1));
+			}
+		</style>
+		
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="caja1">#ADD8E6, #A020F0</div>
+		<div id="caja2">circle, #ADD8E6, #A020F0</div>
+		<div id="caja3">20% 80%, circle, #ADD8E6, #A020F0</div>
+		<div id="caja4">20% 80%, circle, #ADD8E6, #A020F0, #FFC0CB, #A52A2A</div>
+		<div id="caja5">right, #ADD8E6 30%, #A020F0 70%</div>
+		<div id="caja6">circle closest-side, #ADD8E6, #A020F0</div>
+		<div id="caja7">circle farthest-side, #ADD8E6, #A020F0</div>
+		<div id="caja8">
+			left, rgba(173,216,230,0.1) 30%, rgba(160,32,240,0.9) 70% ,<br />
+			top, rgba(255,165,0,0.1) 30%, rgba(165,42,42,0.9) 70%
+		</div>
+		<div id="caja9">
+			Dos gradientes radiales y uno lineal
+		</div>
+	</body>
+</html>

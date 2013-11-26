@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Transiciones</title>
+		<meta name="description" content="Ejemplo de transiciones en CSS3" />
+		<meta name="author" content="fjfortis" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		
+		<style>
+			article {
+				padding: 1em;
+				margin: 1em auto;
+				width: 600px;
+				border: 1px solid #FFA500;
+			}
+			
+			header {
+				float: left;
+				width: 30%;
+				height: 2em;
+				margin: 1em 1em 1em 0;
+				padding: 1em;
+				overflow: hidden;
+				border: 1px solid #FFA500;
+				background-color: #A020F0;
+			}
+			header * {
+				margin: 0;
+				padding: 0;
+			}
+			
+			header {
+				transition: all 2s;
+			}
+			header:hover {
+				width: 93%;
+				height: 3.5em;
+				margin-right: 0;
+				background-color: #FFA500;
+			}
+			
+			header h1 {
+				opacity: 1;
+				height: 1em;
+				transition:
+					opacity 1s,
+					height 1s 1s;
+			}
+			header:hover h1 {
+				opacity: 0;
+				height: 0;
+			}
+			
+			header p {
+				opacity: 0;
+				transition: all 1s;
+			}
+			header:hover p {
+				opacity: 1;
+			}
+
+		</style>
+		
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<article>
+			<header>
+				<h1>Transición</h1>
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diamvoluptua. At vero eos et accusam et justo duo dolores</p>
+			</header>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo arcu, congue vel laoreet vitae, fringilla et elit. Aliquam justo arcu, congue vel laoreet vitae, fringilla et elit.</p>
+			<p>In eget arcu tortor, non euismod lorem. Nulla a est in ligula tincidunt interdum. Donec magna tellus, rutrum eu luctus et, luctus ut sem. Vivamus lacus lorem, rutrum eu cursus ac, dignissim in orci.</p>
+			<p>Duis pulvinar, libero ac ultrices rutrum, justo ligula ultrices eros, a faucibus dui lectus rutrum urna.</p>
+			<p>Integer auctor nibh a est sodales ut malesuada odio luctus. Aenean molestie consectetur est sed consequat.</p>
+			<p>Nullam at turpis vitae purus fermentum commodo at sed dolor. Sed quam sapien, vehicula id condimentum eu, consequat quis purus. Integer elit massa, euismod a bibendum ut, pellentesque vel tellus.</p>
+			<p>Suspendisse volutpat ullamcorper nulla vel bibendum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam varius orci nec est hendrerit sed rutrum turpis porta. Suspendisse potenti. Mauris venenatis scelerisque eros, et fermentum mauris elementum vel.</p>
+		</article>
+	</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Transiciones</title>
+		<meta name="description" content="Ejemplo de transiciones en CSS3" />
+		<meta name="author" content="fjfortis" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		
+		<style>
+			div {
+				font-weight: bold;
+				float: left;
+				width: 200px;
+				height: 200px;
+				margin: 1em;
+				padding: 1em;
+				border: 1px solid #FFA500;
+				overflow: hidden;
+			}
+			
+			#caja1 {
+				transition-property: all;
+				transition-duration: 2s;
+			}
+			#caja1:hover {
+				width: 400px;
+			}
+			
+			#caja2 {
+				transition: all 2s;
+			}
+			#caja2:hover {
+				width: 400px;
+				height: 400px;
+			}
+			
+			#caja3 {
+				transition: all 2s;
+			}
+			#caja3:hover {
+				border-radius: 50%;
+			}
+			
+			#caja4 {
+				clear: both;
+				transition: all 2s;
+				transition-timing-function: ease-in;
+			}
+			#caja4:hover {
+				height: 400px;
+			}
+			
+			#caja5 {
+				transition: all 2s;
+				transition-timing-function: ease-out;
+			}
+			#caja5:hover {
+				height: 400px;
+				background-color: #A020F0;
+			}
+			
+			#caja6 {
+				transition: all 2s;
+				transition-timing-function: ease-out;
+				transition-delay: -1s;
+			}
+			#caja6:hover {
+				height: 400px;
+				background-color: #A020F0;
+			}
+		</style>
+		
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="caja1">Caja 1</div>
+		<div id="caja2">Caja 2</div>
+		<div id="caja3">Caja 3</div>
+		<div id="caja4">Caja 4</div>
+		<div id="caja5">Caja 5</div>
+		<div id="caja6">Caja 6</div>
+	</body>
+</html>

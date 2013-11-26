@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Cajas con sombras</title>
+		<meta name="description" content="Ejemplo de cajas con sombras en CSS3" />
+		<meta name="author" content="fjfortis" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		
+		<style>
+			div {
+				font-weight: bold;
+				float: left;
+				width: 200px;
+				height: 200px;
+				margin: 2em;
+				padding: 0.5em;
+				background-color: #FFA500;
+				border-radius: 1em;
+			}
+			
+			#caja1 {
+				box-shadow: 0.5em 0.5em #777;
+			}
+			#caja2 {
+				box-shadow: 0.5em 0.5em 20px #777;
+			}
+			#caja3 {
+				box-shadow: 0.5em 0.5em 20px #777 inset;
+			}
+			#caja4 {
+				box-shadow: 0.5em 0.5em 20px 0.5em #777;
+			}
+			#caja5 {
+				box-shadow: 0.5em 0.5em 20px -0.5em #777;
+			}
+			#caja6 {
+				box-shadow:
+					0 5px 10px rgba(255,255,255,0.5) inset,
+					0 -5px 10px rgba(0,0,0,0.5) inset;
+			}
+		</style>
+		
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="caja1">box-shadow: 0.5em 0.5em #777</div>
+		<div id="caja2">box-shadow: 0.5em 0.5em 20px #777</div>
+		<div id="caja3">box-shadow: 0.5em 0.5em 20px #777 inset</div>
+		<div id="caja4">box-shadow: 0.5em 0.5em 20px 0.5em #777</div>
+		<div id="caja5">box-shadow: 0.5em 0.5em 20px -0.5em #777</div>
+		<div id="caja6">
+			box-shadow:<br />
+			0 5px 10px rgba(255,255,255,0.5) inset,<br />
+			0 -5px 10px rgba(0,0,0,0.5) inset;
+		</div>
+	</body>
+</html>

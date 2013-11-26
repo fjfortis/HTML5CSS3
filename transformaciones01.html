@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Transformaciones</title>
+		<meta name="description" content="Ejemplo de transformaciones en CSS3" />
+		<meta name="author" content="fjfortis" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		
+		<style>
+			div {
+				font-weight: bold;
+				float: left;
+				width: 200px;
+				height: 100px;
+				overflow: auto;
+				padding: 1em;
+				margin: 5em 1em;
+				background-color: #FFA500;
+			}
+
+			#caja1 {
+/*				transform: funcTrans();*/
+			}
+
+			#caja2 {
+				transform: scale(1,2);
+			}
+
+			#caja3 {
+				transform: rotate(15deg);
+			}
+
+			#caja4 {
+				transform: skewX(15deg);
+			}
+
+			#caja5 {
+				transform: skewY(15deg);
+			}
+
+			#caja6 {
+				transform: skewY(15deg) rotate(75deg);
+			}
+		</style>
+		
+		<script src="js/prefixfree.min.js"></script>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="caja1">Sin transformaciones</div>
+		<div id="caja2">scale(1,2)</div>
+		<div id="caja3">rotate(15deg)</div>
+		<div id="caja4">skewX(15deg)</div>
+		<div id="caja5">skewY(15deg)</div>
+		<div id="caja6">skewY(15deg) rotate(75deg)</div>
+	</body>
+</html>
