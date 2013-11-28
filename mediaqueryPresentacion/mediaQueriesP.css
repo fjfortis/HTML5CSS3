@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+#contenedor {
+	padding: 0;
+}
+
+
+#logo {
+	width:40px;
+	height:30px;
+	background: url("logoP.png") no-repeat center right;
+	float:right;
+}
+#cabecera h1 {
+	padding:0 0 0 0.5em;
+}
+
+
+#menuPrincipal {
+	padding:0.5em;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+
+
+#colIzq {
+	width:auto;
+	float:none;
+}
+#colIzq article {
+	margin:1em 0 1em 0;
+}
+#colIzq article header {
+	font-size:1.2em;
+	margin:0;
+}
+#colIzq article ul {
+	overflow:hidden;
+}
+#colIzq article ul li {
+	display:inline;
+}
+#colIzq article ul li a {
+	float:left;
+	padding: 0.2em 0.5em 0.2em 0.5em;
+}
+
+
+#colCentro {
+	width:auto;
+	float:none;
+	padding: 0 1em 0 1em;
+}
+#colCentro h1 {
+	font-size: 1.5em;
+}
+
+
+#colPubli {
+	display:none;
+}
+
+
+#pie {
+	font-size:0.8em;
+	letter-spacing:normal;
+}
+#pie .licencia {
+	padding: 0;
+	background: none;
+}

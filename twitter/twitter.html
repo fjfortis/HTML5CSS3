@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Twitter</title>
+		<meta name="description" content="Ejemplo de RWD maquetando Twitter. Maquetación realizada con HTML5 y CSS3 sin utilización de frameworks" />
+		<meta name="author" content="fjfortis" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/twitter.css" />
+		<link rel="stylesheet" href="css/twitterT.css" media="only all and (min-width:650px)" />
+		<link rel="stylesheet" href="css/twitterD.css" media="only all and (min-width:1150px)" />
+		
+		<script type="text/javascript" charset="utf-8" src="js/prefixfree.min.js"></script>
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<link rel="shortcut icon" href="favicon.ico" />
+	</head>
+	<body>
+		<div id="pagina">
+			<header id="cabecera">
+				<h1>Twitter</h1>
+				<div class="acciones">
+					<ul>
+						<li class="buscar">
+							<form action="#" method="get">
+								<label for="search">Buscar</label>
+								<input type="search" id="search" placeholder="Buscar" />
+							</form>
+							<a href="#" title="Buscar">Buscar</a>
+						</li>
+						<li class="mensajes"><a href="#" title="Mensajes directos">Mensajes directos</a></li>
+						<li class="publicar"><a href="#" title="Publicar un nuevo Tweet">Publicar un nuevo Tweet</a></li>
+						<li class="configuracion"><a href="#" title="Configuración">Configuración</a></li>
+					</ul>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#" class="inicio">Inicio</a></li>
+						<li><a href="#" class="conecta">Conecta</a></li>
+						<li><a href="#" class="descubre">Descubre</a></li>
+						<li><a href="#" class="cuenta activo">Cuenta</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div id="contenedor">
+				<main>
+					<section id="perfil">
+						<div class="fondo">
+							<header class="nombre">
+								<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+							</header>
+							<section class="descripcion">
+								<p class="bio">Profesor de informática y desarrollador web. Siempre con ganas de aprender.</p>
+								<p class="localizacion">Sevilla</p>
+							</section>
+						</div>
+						<footer>
+							<ul class="estadisticas">
+								<li><a href="#">962 <span>tweets</span></a></li>
+								<li><a href="#">278 <span>siguiendo</span></a></li>
+								<li><a href="#">245 <span>seguidores</span></a></li>
+							</ul>
+							<a href="#" class="boton">Editar perfil</a>
+						</footer>
+					</section>
+					<section id="tweets">
+						<h1>Tweets</h1>
+						<article>
+							<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+							<header>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+								<div class="fecha">
+									<time datetime="2013-11-20">20 nov</time>
+								</div>
+							</header>
+							<p>
+								"Linux a la caza de Microsoft y Blackberry en los coches inteligentes" <a href="#" rel="nofollow" target="_blank">feedly.com/k/1dftwv9</a>
+							</p>
+							<footer>
+								<a href="#" class="accionPrincipal">abrir</a>
+								<ul class="acciones">
+									<li><a href="#" class="responder">Responder</a></li>
+									<li><a href="#" class="eliminar">Eliminar</a></li>
+									<li><a href="#" class="favorito">Favorito</a></li>
+									<li><a href="#" class="pocket">Pocket</a></li>
+									<li><a href="#" class="mas">···Más</a></li>
+								</ul>
+							</footer>
+						</article>
+						<article>
+							<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+							<header>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+								<div class="fecha">
+									<time datetime="2013-11-20">20 nov</time>
+								</div>
+							</header>
+							<p>
+								"Linux a la caza de Microsoft y Blackberry en los coches inteligentes" <a href="#" rel="nofollow" target="_blank">feedly.com/k/1dftwv9</a>
+							</p>
+							<footer>
+								<a href="#" class="accionPrincipal">abrir</a>
+								<ul class="acciones">
+									<li><a href="#" class="responder">Responder</a></li>
+									<li><a href="#" class="eliminar">Eliminar</a></li>
+									<li><a href="#" class="favorito">Favorito</a></li>
+									<li><a href="#" class="pocket">Pocket</a></li>
+									<li><a href="#" class="mas">···Más</a></li>
+								</ul>
+							</footer>
+						</article>
+						<article>
+							<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+							<header>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+								<div class="fecha">
+									<time datetime="2013-11-20">20 nov</time>
+								</div>
+							</header>
+							<p>
+								"Linux a la caza de Microsoft y Blackberry en los coches inteligentes" <a href="#" rel="nofollow" target="_blank">feedly.com/k/1dftwv9</a>
+							</p>
+							<footer>
+								<a href="#" class="accionPrincipal">abrir</a>
+								<ul class="acciones">
+									<li><a href="#" class="responder">Responder</a></li>
+									<li><a href="#" class="eliminar">Eliminar</a></li>
+									<li><a href="#" class="favorito">Favorito</a></li>
+									<li><a href="#" class="pocket">Pocket</a></li>
+									<li><a href="#" class="mas">···Más</a></li>
+								</ul>
+							</footer>
+						</article>
+						<article>
+							<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+							<header>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+								<div class="fecha">
+									<time datetime="2013-11-20">20 nov</time>
+								</div>
+							</header>
+							<p>
+								"Linux a la caza de Microsoft y Blackberry en los coches inteligentes" <a href="#" rel="nofollow" target="_blank">feedly.com/k/1dftwv9</a>
+							</p>
+							<footer>
+								<a href="#" class="accionPrincipal">abrir</a>
+								<ul class="acciones">
+									<li><a href="#" class="responder">Responder</a></li>
+									<li><a href="#" class="eliminar">Eliminar</a></li>
+									<li><a href="#" class="favorito">Favorito</a></li>
+									<li><a href="#" class="pocket">Pocket</a></li>
+									<li><a href="#" class="mas">···Más</a></li>
+								</ul>
+							</footer>
+						</article>
+						<article>
+							<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+							<header>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+								<div class="fecha">
+									<time datetime="2013-11-20">20 nov</time>
+								</div>
+							</header>
+							<p>
+								"Linux a la caza de Microsoft y Blackberry en los coches inteligentes" <a href="#" rel="nofollow" target="_blank">feedly.com/k/1dftwv9</a>
+							</p>
+							<footer>
+								<a href="#" class="accionPrincipal">abrir</a>
+								<ul class="acciones">
+									<li><a href="#" class="responder">Responder</a></li>
+									<li><a href="#" class="eliminar">Eliminar</a></li>
+									<li><a href="#" class="favorito">Favorito</a></li>
+									<li><a href="#" class="pocket">Pocket</a></li>
+									<li><a href="#" class="mas">···Más</a></li>
+								</ul>
+							</footer>
+						</article>
+						<article>
+							<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+							<header>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+								<div class="fecha">
+									<time datetime="2013-11-20">20 nov</time>
+								</div>
+							</header>
+							<p>
+								"Linux a la caza de Microsoft y Blackberry en los coches inteligentes" <a href="#" rel="nofollow" target="_blank">feedly.com/k/1dftwv9</a>
+							</p>
+							<footer>
+								<a href="#" class="accionPrincipal">abrir</a>
+								<ul class="acciones">
+									<li><a href="#" class="responder">Responder</a></li>
+									<li><a href="#" class="eliminar">Eliminar</a></li>
+									<li><a href="#" class="favorito">Favorito</a></li>
+									<li><a href="#" class="pocket">Pocket</a></li>
+									<li><a href="#" class="mas">···Más</a></li>
+								</ul>
+							</footer>
+						</article>
+						<article>
+							<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+							<header>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+								<div class="fecha">
+									<time datetime="2013-11-20">20 nov</time>
+								</div>
+							</header>
+							<p>
+								"Linux a la caza de Microsoft y Blackberry en los coches inteligentes" <a href="#" rel="nofollow" target="_blank">feedly.com/k/1dftwv9</a>
+							</p>
+							<footer>
+								<a href="#" class="accionPrincipal">abrir</a>
+								<ul class="acciones">
+									<li><a href="#" class="responder">Responder</a></li>
+									<li><a href="#" class="eliminar">Eliminar</a></li>
+									<li><a href="#" class="favorito">Favorito</a></li>
+									<li><a href="#" class="pocket">Pocket</a></li>
+									<li><a href="#" class="mas">···Más</a></li>
+								</ul>
+							</footer>
+						</article>
+						<article>
+							<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+							<header>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+								<div class="fecha">
+									<time datetime="2013-11-20">20 nov</time>
+								</div>
+							</header>
+							<p>
+								"Linux a la caza de Microsoft y Blackberry en los coches inteligentes" <a href="#" rel="nofollow" target="_blank">feedly.com/k/1dftwv9</a>
+							</p>
+							<footer>
+								<a href="#" class="accionPrincipal">abrir</a>
+								<ul class="acciones">
+									<li><a href="#" class="responder">Responder</a></li>
+									<li><a href="#" class="eliminar">Eliminar</a></li>
+									<li><a href="#" class="favorito">Favorito</a></li>
+									<li><a href="#" class="pocket">Pocket</a></li>
+									<li><a href="#" class="mas">···Más</a></li>
+								</ul>
+							</footer>
+						</article>
+						<article>
+							<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+							<header>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+								<div class="fecha">
+									<time datetime="2013-11-20">20 nov</time>
+								</div>
+							</header>
+							<p>
+								"Linux a la caza de Microsoft y Blackberry en los coches inteligentes" <a href="#" rel="nofollow" target="_blank">feedly.com/k/1dftwv9</a>
+							</p>
+							<footer>
+								<a href="#" class="accionPrincipal">abrir</a>
+								<ul class="acciones">
+									<li><a href="#" class="responder">Responder</a></li>
+									<li><a href="#" class="eliminar">Eliminar</a></li>
+									<li><a href="#" class="favorito">Favorito</a></li>
+									<li><a href="#" class="pocket">Pocket</a></li>
+									<li><a href="#" class="mas">···Más</a></li>
+								</ul>
+							</footer>
+						</article>
+						<article>
+							<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+							<header>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+								<div class="fecha">
+									<time datetime="2013-11-20">20 nov</time>
+								</div>
+							</header>
+							<p>
+								"Linux a la caza de Microsoft y Blackberry en los coches inteligentes" <a href="#" rel="nofollow" target="_blank">feedly.com/k/1dftwv9</a>
+							</p>
+							<footer>
+								<a href="#" class="accionPrincipal">abrir</a>
+								<ul class="acciones">
+									<li><a href="#" class="responder">Responder</a></li>
+									<li><a href="#" class="eliminar">Eliminar</a></li>
+									<li><a href="#" class="favorito">Favorito</a></li>
+									<li><a href="#" class="pocket">Pocket</a></li>
+									<li><a href="#" class="mas">···Más</a></li>
+								</ul>
+							</footer>
+						</article>
+						<article>
+							<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+							<header>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+								<div class="fecha">
+									<time datetime="2013-11-20">20 nov</time>
+								</div>
+							</header>
+							<p>
+								"Linux a la caza de Microsoft y Blackberry en los coches inteligentes" <a href="#" rel="nofollow" target="_blank">feedly.com/k/1dftwv9</a>
+							</p>
+							<footer>
+								<a href="#" class="accionPrincipal">abrir</a>
+								<ul class="acciones">
+									<li><a href="#" class="responder">Responder</a></li>
+									<li><a href="#" class="eliminar">Eliminar</a></li>
+									<li><a href="#" class="favorito">Favorito</a></li>
+									<li><a href="#" class="pocket">Pocket</a></li>
+									<li><a href="#" class="mas">···Más</a></li>
+								</ul>
+							</footer>
+						</article>
+						<article>
+							<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+							<header>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+								<div class="fecha">
+									<time datetime="2013-11-20">20 nov</time>
+								</div>
+							</header>
+							<p>
+								"Linux a la caza de Microsoft y Blackberry en los coches inteligentes" <a href="#" rel="nofollow" target="_blank">feedly.com/k/1dftwv9</a>
+							</p>
+							<footer>
+								<a href="#" class="accionPrincipal">abrir</a>
+								<ul class="acciones">
+									<li><a href="#" class="responder">Responder</a></li>
+									<li><a href="#" class="eliminar">Eliminar</a></li>
+									<li><a href="#" class="favorito">Favorito</a></li>
+									<li><a href="#" class="pocket">Pocket</a></li>
+									<li><a href="#" class="mas">···Más</a></li>
+								</ul>
+							</footer>
+						</article>
+						<article>
+							<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+							<header>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+								<div class="fecha">
+									<time datetime="2013-11-20">20 nov</time>
+								</div>
+							</header>
+							<p>
+								"Linux a la caza de Microsoft y Blackberry en los coches inteligentes" <a href="#" rel="nofollow" target="_blank">feedly.com/k/1dftwv9</a>
+							</p>
+							<footer>
+								<a href="#" class="accionPrincipal">abrir</a>
+								<ul class="acciones">
+									<li><a href="#" class="responder">Responder</a></li>
+									<li><a href="#" class="eliminar">Eliminar</a></li>
+									<li><a href="#" class="favorito">Favorito</a></li>
+									<li><a href="#" class="pocket">Pocket</a></li>
+									<li><a href="#" class="mas">···Más</a></li>
+								</ul>
+							</footer>
+						</article>
+						<article>
+							<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+							<header>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+								<div class="fecha">
+									<time datetime="2013-11-20">20 nov</time>
+								</div>
+							</header>
+							<p>
+								"Linux a la caza de Microsoft y Blackberry en los coches inteligentes" <a href="#" rel="nofollow" target="_blank">feedly.com/k/1dftwv9</a>
+							</p>
+							<footer>
+								<a href="#" class="accionPrincipal">abrir</a>
+								<ul class="acciones">
+									<li><a href="#" class="responder">Responder</a></li>
+									<li><a href="#" class="eliminar">Eliminar</a></li>
+									<li><a href="#" class="favorito">Favorito</a></li>
+									<li><a href="#" class="pocket">Pocket</a></li>
+									<li><a href="#" class="mas">···Más</a></li>
+								</ul>
+							</footer>
+						</article>
+						<article>
+							<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+							<header>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+								<div class="fecha">
+									<time datetime="2013-11-20">20 nov</time>
+								</div>
+							</header>
+							<p>
+								"Linux a la caza de Microsoft y Blackberry en los coches inteligentes" <a href="#" rel="nofollow" target="_blank">feedly.com/k/1dftwv9</a>
+							</p>
+							<footer>
+								<a href="#" class="accionPrincipal">abrir</a>
+								<ul class="acciones">
+									<li><a href="#" class="responder">Responder</a></li>
+									<li><a href="#" class="eliminar">Eliminar</a></li>
+									<li><a href="#" class="favorito">Favorito</a></li>
+									<li><a href="#" class="pocket">Pocket</a></li>
+									<li><a href="#" class="mas">···Más</a></li>
+								</ul>
+							</footer>
+						</article>
+						<article>
+							<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+							<header>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+								<div class="fecha">
+									<time datetime="2013-11-20">20 nov</time>
+								</div>
+							</header>
+							<p>
+								"Linux a la caza de Microsoft y Blackberry en los coches inteligentes" <a href="#" rel="nofollow" target="_blank">feedly.com/k/1dftwv9</a>
+							</p>
+							<footer>
+								<a href="#" class="accionPrincipal">abrir</a>
+								<ul class="acciones">
+									<li><a href="#" class="responder">Responder</a></li>
+									<li><a href="#" class="eliminar">Eliminar</a></li>
+									<li><a href="#" class="favorito">Favorito</a></li>
+									<li><a href="#" class="pocket">Pocket</a></li>
+									<li><a href="#" class="mas">···Más</a></li>
+								</ul>
+							</footer>
+						</article>
+						<article>
+							<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+							<header>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+								<div class="fecha">
+									<time datetime="2013-11-20">20 nov</time>
+								</div>
+							</header>
+							<p>
+								"Linux a la caza de Microsoft y Blackberry en los coches inteligentes" <a href="#" rel="nofollow" target="_blank">feedly.com/k/1dftwv9</a>
+							</p>
+							<footer>
+								<a href="#" class="accionPrincipal">abrir</a>
+								<ul class="acciones">
+									<li><a href="#" class="responder">Responder</a></li>
+									<li><a href="#" class="eliminar">Eliminar</a></li>
+									<li><a href="#" class="favorito">Favorito</a></li>
+									<li><a href="#" class="pocket">Pocket</a></li>
+									<li><a href="#" class="mas">···Más</a></li>
+								</ul>
+							</footer>
+						</article>
+						<article>
+							<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+							<header>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+								<div class="fecha">
+									<time datetime="2013-11-20">20 nov</time>
+								</div>
+							</header>
+							<p>
+								"Linux a la caza de Microsoft y Blackberry en los coches inteligentes" <a href="#" rel="nofollow" target="_blank">feedly.com/k/1dftwv9</a>
+							</p>
+							<footer>
+								<a href="#" class="accionPrincipal">abrir</a>
+								<ul class="acciones">
+									<li><a href="#" class="responder">Responder</a></li>
+									<li><a href="#" class="eliminar">Eliminar</a></li>
+									<li><a href="#" class="favorito">Favorito</a></li>
+									<li><a href="#" class="pocket">Pocket</a></li>
+									<li><a href="#" class="mas">···Más</a></li>
+								</ul>
+							</footer>
+						</article>
+						<article>
+							<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+							<header>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+								<div class="fecha">
+									<time datetime="2013-11-20">20 nov</time>
+								</div>
+							</header>
+							<p>
+								"Linux a la caza de Microsoft y Blackberry en los coches inteligentes" <a href="#" rel="nofollow" target="_blank">feedly.com/k/1dftwv9</a>
+							</p>
+							<footer>
+								<a href="#" class="accionPrincipal">abrir</a>
+								<ul class="acciones">
+									<li><a href="#" class="responder">Responder</a></li>
+									<li><a href="#" class="eliminar">Eliminar</a></li>
+									<li><a href="#" class="favorito">Favorito</a></li>
+									<li><a href="#" class="pocket">Pocket</a></li>
+									<li><a href="#" class="mas">···Más</a></li>
+								</ul>
+							</footer>
+						</article>
+						<article>
+							<figure><img src="img/fjfortis.jpg" alt="Paco Fortis" /></figure>
+							<header>
+								<h1 class="nombreCompleto">Paco Fortis</h1>
+								<h2 class="usuario">@fjfortis</h2>
+								<div class="fecha">
+									<time datetime="2013-11-20">20 nov</time>
+								</div>
+							</header>
+							<p>
+								"Linux a la caza de Microsoft y Blackberry en los coches inteligentes" <a href="#" rel="nofollow" target="_blank">feedly.com/k/1dftwv9</a>
+							</p>
+							<footer>
+								<a href="#" class="accionPrincipal">abrir</a>
+								<ul class="acciones">
+									<li><a href="#" class="responder">Responder</a></li>
+									<li><a href="#" class="eliminar">Eliminar</a></li>
+									<li><a href="#" class="favorito">Favorito</a></li>
+									<li><a href="#" class="pocket">Pocket</a></li>
+									<li><a href="#" class="mas">···Más</a></li>
+								</ul>
+							</footer>
+						</article>
+					</section>
+				</main>
+				<aside id="salpicadero">
+					
+					<div class="bloque">
+						<ul class="menu">
+							<li><a href="#" class="activo">Tweets</a></li>
+							<li><a href="#">Siguiendo</a></li>
+							<li><a href="#">Seguidores</a></li>
+							<li><a href="#">Favoritos</a></li>
+							<li><a href="#">Listas</a></li>
+						</ul>
+					</div>
+					
+					<div class="bloque">
+						<ul class="menu">
+							<li><a href="#">Fotos y vídeos</a></li>
+						</ul>
+						<div class="miniaturas">
+							<figure><img src="img/thumb.jpg" alt="" /></figure>
+						</div>
+						<div class="miniaturas">
+							<figure><img src="img/thumb.jpg" alt="" /></figure>
+						</div>
+						<div class="miniaturas">
+							<figure><img src="img/thumb.jpg" alt="" /></figure>
+						</div>
+						<div class="miniaturas">
+							<figure><img src="img/thumb.jpg" alt="" /></figure>
+						</div>
+						<div class="miniaturas">
+							<figure><img src="img/thumb.jpg" alt="" /></figure>
+						</div>
+					</div>
+					
+					<div class="bloque">
+						<h2>A quién seguir</h2>
+						<div class="opciones">
+							<a href="#">Refrescar</a>
+							<a href="#">Cuentas populares</a>
+						</div>
+						<div class="usuarios">
+							<article>
+								<figure><img src="img/dropbox.png" alt="Dropbox" /></figure>
+								<header>
+									<h1 class="nombreCompleto">Dropbox</h1>
+									<h2 class="usuario">@Dropbox</h2>
+									<a href="#" class="cerrar">x</a>
+								</header>
+								<p>Seguido por <a href="#">Chema Carmona</a> y <a href="#">o...</a></p>
+								<footer>
+									<a href="#" class="boton icon-twitter">Seguir</a>
+								</footer>
+							</article>
+							<article>
+								<figure><img src="img/dropbox.png" alt="Dropbox" /></figure>
+								<header>
+									<h1 class="nombreCompleto">Dropbox</h1>
+									<h2 class="usuario">@Dropbox</h2>
+									<a href="#" class="cerrar">x</a>
+								</header>
+								<p>Seguido por <a href="#">Chema Carmona</a> y <a href="#">o...</a></p>
+								<footer>
+									<a href="#" class="boton icon-twitter">Seguir</a>
+								</footer>
+							</article>
+						</div>
+					</div>
+					
+					<div class="bloque">
+						<h2>Tendencias</h2>
+						<div class="opciones">
+							<a href="#">Cambiar</a>
+						</div>
+						<ul class="tendencias">
+							<li><a href="#">tendencia 1</a></li>
+							<li><a href="#">tendencia 2</a></li>
+							<li><a href="#">tendencia 3</a></li>
+							<li><a href="#">tendencia 4</a></li>
+							<li><a href="#">tendencia 5</a></li>
+							<li><a href="#">tendencia 6</a></li>
+							<li><a href="#">tendencia 7</a></li>
+							<li><a href="#">tendencia 8</a></li>
+							<li><a href="#">tendencia 9</a></li>
+						</ul>
+					</div>
+					
+					<div class="bloque">
+						<ul class="pie">
+							<li class="copyright">© 2013 Twitter</li>
+							<li><a href="/about">Sobre nosotros</a></li>
+							<li><a href="//support.twitter.com">Ayuda</a></li>
+							<li><a href="/tos">Términos</a></li>
+							<li><a href="/privacy">Privacidad</a></li>
+							<li><a href="//support.twitter.com/articles/20170514">Cookies</a></li>
+							<li><a href="https://blog.twitter.com/espanol">Blog</a></li>
+							<li><a href="http://status.twitter.com">Estado</a></li>
+							<li><a href="https://about.twitter.com/products">Aplicaciones</a></li>
+							<li><a href="/about/resources">Recursos</a></li>
+							<li><a href="/jobs">Empleos</a></li>
+							<li><a href="//support.twitter.com/articles/20170451">Anuncios</a></li>
+							<li><a href="https://business.twitter.com/es/start-advertising">Publicidad</a></li>
+							<li><a href="https://business.twitter.com/es">Empresas</a></li>
+							<li><a href="//media.twitter.com">Media</a></li>
+							<li><a href="//dev.twitter.com">Desarrolladores</a></li>
+						</ul>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</body>
+</html>

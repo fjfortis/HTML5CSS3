@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+/**** Reset ****/
+* {
+	padding:0;
+	margin:0;
+}
+
+img {
+	border: none;
+	vertical-align: text-bottom;
+}
+
+/* Necesario para formatear correctamente HTML5 en todos los navegadores */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+	display:block;
+}
+
+/**** Base ****/
+body {
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-size:0.8em;
+	color: #4A372B;
+}
+
+a {
+	text-decoration: none;
+	color: #5C202D;
+	font-weight:bold;
+}
+
+p {
+	text-align:justify;
+	padding-bottom:0.5em;
+}
+
+
+/**** Layout ****/
+#contenedor {
+	padding: 1em 3% 1em 3%;
+}
+
+
+/*** cabecera ***/
+#cabecera {
+	position:relative;
+	background: #C8A2F2;
+	color:#5C202D;
+}
+#logo {
+	width:170px;
+	height:100px;
+	background: url("logo.png") no-repeat top left;
+	float:left;
+}
+#cabecera h1 {
+	padding:1em;
+}
+
+/** Menú principal **/
+#menuPrincipal {
+	clear:both;
+	padding:1em;
+	background-color: #6D0CB8;
+	color: #FFF;
+	letter-spacing:0.1em;
+	word-spacing:0.5em;
+}
+#menuPrincipal a {
+	color: #FFF;
+}
+#menuPrincipal a:hover {
+	text-decoration:underline;
+}
+
+
+/*** colIzq ***/
+#colIzq {
+	width:20%;
+	float:left;
+}
+/** bloque **/
+#colIzq article {
+	background-color:#C8A2F2;
+	margin:1em 1em 1em 0;
+	padding:0.3em;
+}
+#colIzq article header {
+	background-color:#6D0CB8;
+	color: #FFF;
+	font-size:1.4em;
+	padding:0.2em 0.5em 0.2em 0.5em;
+	font-variant:small-caps;
+	margin-bottom:0.5em;
+}
+#colIzq article header a {
+	color: #FFF;
+}
+#colIzq article ul {
+	padding:0.5em 0;
+}
+#colIzq article ul li {
+	padding: 0;
+	list-style: none;
+	background: none;
+}
+#colIzq article ul li a {
+	padding:0.3em 0.3em 0.3em 1.3em;
+	display:block;
+}
+#colIzq article ul li a:hover {
+	background-color:#5C202D;
+	color:#fff;
+}
+
+
+/*** colCentro ***/
+#colCentro {
+	width:65%;
+	float:left;
+}
+
+#colCentro h1 {
+	font-size: 2em;
+	text-transform:capitalize;
+	font-variant:small-caps;
+	padding:0.2em;
+	margin:0.5em;
+	color:#5C202D;
+}
+
+
+/*** colPubli ***/
+#colPubli {
+	width:15%;
+	float:left;
+}
+/** bloque **/
+#colPubli article {
+	background-color:#C8A2F2;
+	margin:1em 0 1em 1em;
+	padding:0.3em;
+}
+#colPubli article header {
+	background-color:#6D0CB8;
+	color: #FFF;
+	padding:0.2em 0.5em 0.2em 0.5em;
+	margin-bottom:0.5em;
+}
+
+
+/*** pie ***/
+#pie {
+	clear:both;
+	padding:0.5em;
+	margin-top:1em;
+	background: #C8A2F2;
+	text-align:center;
+	letter-spacing:0.3em;
+}
+#pie .licencia {
+	padding-left: 65px;
+	background: url("licencia.png") no-repeat top left;
+}

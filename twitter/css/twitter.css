@@ -1,0 +1,234 @@
+body {
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-size: 14px;
+}
+
+img {
+	max-width: 100%;
+}
+
+#pagina {
+	position: relative;
+	min-width: 320px;
+}
+
+
+/***** Cabecera *****/
+#cabecera {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	min-width: 320px;
+}
+
+/**** Logotipo ****/
+#cabecera h1 {
+	position: relative;
+	margin: 0;
+	font-size: 0;
+}
+#cabecera h1:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	margin-top: -12px;
+	left: 10px;
+	width: 23px;
+	height: 23px;
+	background: url(../img/twitter_sprite_mobile.png) no-repeat -53px -198px;
+}
+
+/**** Menú acciones ****/
+#cabecera .acciones {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.acciones ul,
+nav ul,
+#perfil .estadisticas {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.acciones li {
+	float: left;
+	padding: 1px 10px;
+}
+#cabecera .acciones .buscar form {
+	display: none;
+}
+#cabecera .acciones a {
+	display: block;
+	background-image: url(../img/twitter_sprite_mobile.png);
+	background-repeat: no-repeat;
+	height: 23px;
+	width: 23px;
+	font-size: 0px;
+}
+
+/*** Iconos ***/
+#cabecera .acciones .buscar a {
+	background-position: -65px -78px;
+}
+#cabecera .acciones .mensajes a {
+	background-position: -183px -131px;
+}
+#cabecera .acciones .configuracion a {
+	background-position: -81px -175px;
+}
+#cabecera .acciones .publicar a {
+	background-position: -6px -78px;
+}
+
+/**** Menú de navegación ****/
+#cabecera nav {
+	overflow: hidden;
+}
+#cabecera nav li {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+#cabecera nav a {
+	display: block;
+	color: #bbb;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.75);
+	text-decoration: none;
+	padding: 0.4em 0;
+}
+#cabecera nav a:before {
+	content: "";
+	display: block;
+	background-image: url(../img/twitter_sprite_mobile.png);
+	background-repeat: no-repeat;
+	height: 24px;
+	width: 26px;
+	margin: 0 auto 2px;
+}
+#cabecera nav a.activo {
+	color: #fff;
+	background-color: #1C1C1C;
+}
+
+/*** Iconos ***/
+#cabecera nav a.inicio:before {
+	background-position: 0 0;
+}
+#cabecera nav a.inicio.activo:before {
+	background-position: -33px 0;
+}
+#cabecera nav a.conecta:before {
+	background-position: -66px 0;
+}
+#cabecera nav a.conecta.activo:before {
+	background-position: -100px 0;
+}
+#cabecera nav a.descubre:before {
+	background-position: -131px 0;
+}
+#cabecera nav a.descubre.activo:before {
+	background-position: -158px 0;
+}
+#cabecera nav a.cuenta:before {
+	background-position: -188px 0;
+}
+#cabecera nav a.cuenta.activo:before {
+	background-position: -220px 0;
+}
+
+
+/***** Contenedor *****/
+
+/**** Perfil ****/
+#perfil {
+	margin-top: 60px;
+}
+
+/*** Usuario ***/
+#perfil .fondo {
+	padding: 2em 1em 1.5em;
+	background: url(../img/grey_header_web.jpg) no-repeat 0 0;
+	background-size: 100% 100%;
+	color: #fff;
+	text-align: center;
+}
+#perfil .fondo * {
+	margin: 0;
+}
+
+#perfil .nombre figure {
+	padding: 1em 1em 0.5em;
+}
+#perfil .nombre figure img {
+	border: 5px solid #fff;
+	border-radius: 5px;
+}
+#perfil .nombre h1 {
+	font-size: 1.3em;
+}
+#perfil .nombre h2 {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+#perfil .descripcion {
+	display: none;
+}
+
+/*** Estadísticas ***/
+#perfil footer {
+	overflow: hidden;
+}
+
+#perfil .estadisticas li {
+	float: left;
+	width: 33.33%;
+}
+#perfil .estadisticas a {
+	display: block;
+	text-decoration: none;
+	padding: 0.5em 1em;
+	color: #000;
+	font-weight: bold;
+	border-top: solid 1px #bbb;
+	border-bottom: solid 1px #bbb;
+}
+#perfil .estadisticas li:nth-child(even) a {
+	border-left: solid 1px #bbb;
+	border-right: solid 1px #bbb;
+}
+#perfil .estadisticas a span {
+	display: block;
+	color: #bbb;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+
+/*
+	<footer>
+		<ul class="estadisticas">
+			<li><a href="#"><span>962</span> tweets</a></li>
+			<li><a href="#"><span>278</span> siguiendo</a></li>
+			<li><a href="#"><span>245</span> seguidores</a></li>
+		</ul>
+		<a href="#" class="boton">Editar perfil</a>
+	</footer>
+*/
+
+/***** Únicamente dispositivos móviles *****/
+@media only all and (max-width:1149px) {
+	#cabecera h1 {
+		background: linear-gradient(#59A9E3,#2B7EB9);
+		height: 26px;
+	}
+	#cabecera nav {
+		background: linear-gradient(#424242,#000);
+		font-size: 0.9em;
+		border-top: 1px solid #000;
+		box-shadow: inset 0 1px rgba(255,255,255,0.1);
+	}
+}

@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+#logo {
+	width:100px;
+	height:60px;
+	background: url("logoM.png") no-repeat top left;
+}
+#cabecera h1 {
+	padding:0.3em;
+}
+
+
+#colIzq {
+	width:30%;
+}
+
+
+#colCentro {
+	width:70%;
+}
+
+
+#colPubli {
+	width:auto;
+	float:none;
+	clear:both;
+}
